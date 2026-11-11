@@ -1,0 +1,8 @@
+# Notas privadas (inventario de proyectos de trabajo, CV, borradores) — nunca subir
+privado/
+.claude
+
+# Dependencias y salidas de Astro
+node_modules/
+dist/
+.astro/
