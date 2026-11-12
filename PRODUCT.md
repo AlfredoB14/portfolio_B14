@@ -83,8 +83,9 @@ punto de partida, código público— y no adjetivos.
 ## Brand Commitments
 
 - **Nombre:** Alfredo Barranco Ahued.
-- **Título:** idéntico al del CV y LinkedIn: "Desarrollador full-stack" / "Full-stack developer". El sitio nunca dice
-  "junior".
+- **Título:** idéntico al del CV y LinkedIn: "Desarrollador full-stack" / "Full-stack developer". El título principal
+  nunca dice "junior"; los puestos anteriores se citan tal como aparecen en el CV.
+- **Paleta:** el usuario rechazó las combinaciones rojo/blanco/negro y lo que se ve anticuado (11-nov-2026).
 - **Voz:** directa, específica y verificable, con cada cifra acompañada de su punto de partida. Sin superlativos, sin
   "apasionado por la tecnología" y sin declaraciones de misión. En inglés, natural, no traducido palabra por palabra.
 - **Fuera del sitio:** barras o porcentajes de habilidad, contadores animados, pantallas de carga y muros de logos.

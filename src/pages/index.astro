@@ -1,0 +1,19 @@
+---
+// Respaldo de la raíz: en Cloudflare, public/_redirects responde con un 301 a /en/ antes de llegar aquí.
+// Redirección fija, nunca por idioma del navegador ni por IP.
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alfredo Barranco Ahued</title>
+    <meta http-equiv="refresh" content="0; url=/en/" />
+    <link rel="canonical" href={new URL('/en/', Astro.site).href} />
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <p><a href="/en/" hreflang="en">English</a> · <a href="/es/" hreflang="es" lang="es">Español</a></p>
+  </body>
+</html>

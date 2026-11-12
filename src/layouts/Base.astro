@@ -1,0 +1,62 @@
+---
+import '@fontsource-variable/red-hat-display/wght.css';
+import '@fontsource-variable/red-hat-text/wght.css';
+import '@fontsource-variable/red-hat-mono/wght.css';
+import '../styles/global.css';
+import { facts, type Lang, type Content } from '../data/content';
+
+interface Props {
+  lang: Lang;
+  t: Content;
+}
+
+const { lang, t } = Astro.props;
+const site = Astro.site ?? new URL('https://alfredo-barranco.example');
+const url = { es: new URL('/es/', site).href, en: new URL('/en/', site).href };
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  inLanguage: lang,
+  url: url[lang],
+  dateModified: facts.updated,
+  mainEntity: {
+    '@type': 'Person',
+    name: facts.name,
+    jobTitle: lang === 'es' ? 'Desarrollador full-stack' : 'Full-stack developer',
+    address: { '@type': 'PostalAddress', addressLocality: 'Puebla', addressCountry: 'MX' },
+    alumniOf: { '@type': 'CollegeOrUniversity', name: facts.university },
+    knowsLanguage: ['es', 'en'],
+    sameAs: [facts.linkedin, facts.github],
+  },
+};
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{t.meta.title}</title>
+    <meta name="description" content={t.meta.description} />
+    <link rel="canonical" href={url[lang]} />
+    <link rel="alternate" hreflang="es" href={url.es} />
+    <link rel="alternate" hreflang="en" href={url.en} />
+    <link rel="alternate" hreflang="x-default" href={url.en} />
+    <meta name="theme-color" content="#b8336a" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content={t.meta.title} />
+    <meta property="og:description" content={t.meta.description} />
+    <meta property="og:url" content={url[lang]} />
+    <meta property="og:locale" content={t.meta.locale} />
+    <meta property="og:locale:alternate" content={lang === 'es' ? 'en_US' : 'es_MX'} />
+    <meta name="twitter:card" content="summary" />
+    <link rel="me" href={facts.github} />
+    <link rel="me" href={facts.linkedin} />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,599 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-12T00:19:43.248Z",
+  "title": "Design System: Planos de luz y color",
+  "extensions": {
+    "colorMeta": {
+      "rosa": {
+        "role": "primary",
+        "displayName": "Rosa muro",
+        "canonical": "#b8336a",
+        "tonalRamp": [
+          "#1d000a",
+          "#480423",
+          "#7b033f",
+          "#a9235e",
+          "#d04a7e",
+          "#f375a1",
+          "#fdafc7",
+          "#ffe8ee"
+        ]
+      },
+      "lavanda": {
+        "role": "secondary",
+        "displayName": "Lavanda",
+        "canonical": "#cfc6f0",
+        "tonalRamp": [
+          "#0c0818",
+          "#271f3c",
+          "#443c5e",
+          "#635b7f",
+          "#847ca2",
+          "#a79fc4",
+          "#cac5df",
+          "#efedf6"
+        ]
+      },
+      "lavanda-deep": {
+        "role": "secondary",
+        "displayName": "Lavanda profunda",
+        "canonical": "#b4a7e2",
+        "tonalRamp": [
+          "#0d061d",
+          "#281c45",
+          "#45386a",
+          "#64578c",
+          "#8578b0",
+          "#a79cd2",
+          "#cbc3e9",
+          "#efecfa"
+        ]
+      },
+      "ocre": {
+        "role": "tertiary",
+        "displayName": "Ocre piso",
+        "canonical": "#e5a33a",
+        "tonalRamp": [
+          "#130900",
+          "#342103",
+          "#5a3b03",
+          "#815811",
+          "#ac7618",
+          "#d4983a",
+          "#ebc188",
+          "#fbecd9"
+        ]
+      },
+      "sol": {
+        "role": "tertiary",
+        "displayName": "Sol",
+        "canonical": "#f6cf7a",
+        "tonalRamp": [
+          "#110a00",
+          "#302301",
+          "#543f08",
+          "#7a5c09",
+          "#a17c21",
+          "#c3a053",
+          "#dec694",
+          "#f6eedc"
+        ]
+      },
+      "sol-pale": {
+        "role": "tertiary",
+        "displayName": "Sol pálido",
+        "canonical": "#f9dc98",
+        "tonalRamp": [
+          "#100a00",
+          "#302301",
+          "#533f06",
+          "#775d16",
+          "#9a7f3c",
+          "#bca265",
+          "#d9c89f",
+          "#f4eee0"
+        ]
+      },
+      "ciruela": {
+        "role": "neutral",
+        "displayName": "Ciruela",
+        "canonical": "#3b1e3f",
+        "tonalRamp": [
+          "#130515",
+          "#331a36",
+          "#533558",
+          "#745478",
+          "#96759b",
+          "#b998bd",
+          "#d7c0da",
+          "#f4ebf5"
+        ]
+      },
+      "ciruela-2": {
+        "role": "neutral",
+        "displayName": "Ciruela 2",
+        "canonical": "#5c3a60",
+        "tonalRamp": [
+          "#140516",
+          "#341838",
+          "#553359",
+          "#76527a",
+          "#98739d",
+          "#bb97be",
+          "#d9bfdb",
+          "#f4ebf5"
+        ]
+      },
+      "ciruela-deep": {
+        "role": "neutral",
+        "displayName": "Ciruela profunda",
+        "canonical": "#2a1430",
+        "tonalRamp": [
+          "#110614",
+          "#301c35",
+          "#503856",
+          "#705777",
+          "#927799",
+          "#b49abb",
+          "#d4c2d9",
+          "#f2ecf4"
+        ]
+      },
+      "ciruela-lit": {
+        "role": "neutral",
+        "displayName": "Ciruela iluminado",
+        "canonical": "#5e3462",
+        "tonalRamp": [
+          "#150317",
+          "#37143b",
+          "#592f5d",
+          "#7a4f7e",
+          "#9d6fa1",
+          "#bf93c3",
+          "#dcbddf",
+          "#f5eaf6"
+        ]
+      },
+      "cielo": {
+        "role": "neutral",
+        "displayName": "Cielo",
+        "canonical": "#f4effb",
+        "tonalRamp": [
+          "#0c0a0f",
+          "#27232c",
+          "#44404b",
+          "#645f6b",
+          "#857f8c",
+          "#a7a2af",
+          "#cbc7d0",
+          "#efeef1"
+        ]
+      },
+      "cal": {
+        "role": "neutral",
+        "displayName": "Cal",
+        "canonical": "#fff4f7",
+        "tonalRamp": [
+          "#0f090b",
+          "#2d2125",
+          "#4c3e42",
+          "#6b5d61",
+          "#8d7e82",
+          "#afa0a5",
+          "#d1c6c9",
+          "#f1edee"
+        ]
+      },
+      "cal-2": {
+        "role": "neutral",
+        "displayName": "Cal 2",
+        "canonical": "#ffe5ee",
+        "tonalRamp": [
+          "#11080c",
+          "#301f26",
+          "#503b43",
+          "#705a62",
+          "#927b83",
+          "#b49ea6",
+          "#d4c4ca",
+          "#f2edef"
+        ]
+      },
+      "linea": {
+        "role": "neutral",
+        "displayName": "Línea",
+        "canonical": "#ded3ef",
+        "tonalRamp": [
+          "#0d0913",
+          "#282133",
+          "#463d54",
+          "#665c74",
+          "#877d96",
+          "#a9a0b8",
+          "#ccc6d7",
+          "#efedf3"
+        ]
+      },
+      "linea-cal": {
+        "role": "neutral",
+        "displayName": "Línea cal",
+        "canonical": "rgb(255 244 247 / 0.25)",
+        "tonalRamp": [
+          "#0f090b",
+          "#2d2125",
+          "#4c3e42",
+          "#6b5d61",
+          "#8d7e82",
+          "#afa0a5",
+          "#d1c6c9",
+          "#f1edee"
+        ]
+      },
+      "ciruela-wash": {
+        "role": "neutral",
+        "displayName": "Velo ciruela",
+        "canonical": "rgb(59 30 63 / 0.1)",
+        "tonalRamp": [
+          "#130515",
+          "#331a36",
+          "#533558",
+          "#745478",
+          "#96759b",
+          "#b998bd",
+          "#d7c0da",
+          "#f4ebf5"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "El nombre a escala de muro; uno por página."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Título de cada muro (sección)."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Título de cada sala de proyecto."
+      },
+      "title-sm": {
+        "displayName": "Title sm",
+        "purpose": "Puestos; rubros de Formación a 1.1rem y grupos de Stack a 1.2rem."
+      },
+      "link-title": {
+        "displayName": "Link title",
+        "purpose": "Títulos de la lista dentro de un vano; el encabezado del vano va a 1rem con +0.01em."
+      },
+      "statement": {
+        "displayName": "Statement",
+        "purpose": "Prosa breve en primera persona directamente sobre un muro; máx. 40ch."
+      },
+      "role-line": {
+        "displayName": "Role line",
+        "purpose": "La línea de rol bajo el nombre; máx. 30ch."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Entradilla de un muro en ciruela 2; máx. 62ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Lectura; medida de 68–70ch."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "Ámbitos, fichas, lugares, líneas de stack y pie; la línea de sol usa este tamaño en 600."
+      },
+      "nav": {
+        "displayName": "Nav",
+        "purpose": "Navegación de secciones y lista de estado."
+      },
+      "control": {
+        "displayName": "Control",
+        "purpose": "Opciones del selector de idioma; «Más detalle» a 0.9375rem."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Botones; el chip usa 0.9375rem."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Rótulos dt de Stack; el rótulo de una medida a 0.875rem. Nunca en mayúsculas."
+      },
+      "figures": {
+        "displayName": "Figures",
+        "purpose": "Cifras antes → después en Mono tabular; los años de Formación en 500 a tamaño de lectura."
+      }
+    },
+    "shadows": [
+      {
+        "name": "derrame-vano",
+        "value": "inset 0px 6px 0 rgb(59 30 63 / 0.13)",
+        "purpose": "Sombra interior de borde nítido en vanos y vano grande, aquí a mediodía. En el código: inset var(--reveal-x) var(--reveal-y) 0 rgb(59 30 63 / 0.13); el desplazamiento sigue la hora de Puebla (de ±14px en x, de 6 a 14px en y)."
+      },
+      {
+        "name": "derrame-sala",
+        "value": "inset 0px 6px 0 rgb(59 30 63 / 0.1)",
+        "purpose": "La misma sombra interior, más tenue, en cada sala de proyecto. En el código: inset var(--reveal-x) var(--reveal-y) 0 rgb(59 30 63 / 0.1)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "luz-desliza",
+        "value": "left 1600ms cubic-bezier(0.16, 1, 0.3, 1), opacity 1600ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "El único momento animado: al cargar, la luz del piso pasa de mediodía a la hora de Puebla. Solo dentro de @media (prefers-reduced-motion: no-preference)."
+      },
+      {
+        "name": "ease-sol",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Salida exponencial para todo lo que mueve la luz."
+      },
+      {
+        "name": "duracion-sol",
+        "value": "1600ms",
+        "purpose": "Duración del deslizamiento de la luz."
+      },
+      {
+        "name": "chevron-detalle",
+        "value": "transform 180ms ease-out",
+        "purpose": "Giro del chevron de «Más detalle» de −45° a 45° al abrir; respuesta de estado, no decoración."
+      },
+      {
+        "name": "scroll-suave",
+        "value": "scroll-behavior: smooth",
+        "purpose": "Saltos de ancla suaves, solo sin preferencia de movimiento reducido."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "salas",
+        "value": "1100px",
+        "purpose": "max-width. Salas de proyecto a una columna; empleo a dos columnas (10rem / 1fr) con los logros a todo el ancho."
+      },
+      {
+        "name": "apilado",
+        "value": "860px",
+        "purpose": "max-width. La primera pantalla se apila (rosa, vano, piso); el selector de idioma pasa a cal sobre rosa; la sombra de junta se vuelve horizontal; la luz se ensancha a 70 %; empleo, Formación y canales se compactan."
+      },
+      {
+        "name": "compacto",
+        "value": "560px",
+        "purpose": "max-width. Navegación y selector más estrechos; canales en una columna con el chip al inicio; se retira la luz del muro ciruela."
+      }
+    ],
+    "lightModel": {
+      "source": "Hora local de Puebla (America/Mexico_City), leída una vez al cargar con Intl.DateTimeFormat; el script escribe en :root.",
+      "day": "día = clamp((hora − 7) / 12, 0, 1); las 7:00 valen 0 y las 19:00 valen 1.",
+      "variables": [
+        {
+          "name": "--light-x",
+          "formula": "20% + 42% × día",
+          "noon": "41%",
+          "drives": "left del paralelogramo de luz del piso."
+        },
+        {
+          "name": "--reveal-x",
+          "formula": "(0.5 − día) × 28px",
+          "noon": "0px",
+          "drives": "desplazamiento horizontal del derrame de vanos y salas (14px a −14px)."
+        },
+        {
+          "name": "--reveal-y",
+          "formula": "6px + |día − 0.5| × 16px",
+          "noon": "6px",
+          "drives": "desplazamiento vertical del derrame (6px a 14px)."
+        }
+      ],
+      "states": [
+        {
+          "attribute": "data-afternoon",
+          "when": "día > 0.5 (desde las 13:00)",
+          "effect": "las diagonales proyectadas pasan arriba a la derecha y la sombra de junta baja a 35 %."
+        },
+        {
+          "attribute": "data-night",
+          "when": "hora < 7:00 o hora ≥ 19:30",
+          "effect": "la luz del piso baja a 35 % de opacidad."
+        }
+      ],
+      "castShadow": "Seudoelemento ::before de cada muro: triángulo de 42 % del ancho por clamp(5rem, 12vw, 9rem), clip-path polygon(0 0, 100% 0, 0 100%) por la mañana y polygon(0 0, 100% 0, 100% 100%) arriba a la derecha desde las 13:00; relleno rgb(59 30 63 / 0.07) sobre lavanda y ocre, rgb(0 0 0 / 0.12) sobre rosa y ciruela.",
+      "lights": [
+        {
+          "name": "luz-piso",
+          "fill": "#f6cf7a",
+          "clipPath": "polygon(30% 0, 100% 0, 78% 100%, 0 100%)",
+          "size": "min(46%, 38rem) × alto completo del piso",
+          "position": "left: var(--light-x)"
+        },
+        {
+          "name": "luz-ciruela",
+          "fill": "#5e3462",
+          "clipPath": "polygon(40% 0, 100% 0, 60% 100%, 0 100%)",
+          "size": "min(24%, 19rem) × 64%",
+          "position": "abajo, a 7% del borde derecho; fija; se retira bajo 560px"
+        }
+      ],
+      "junctionException": "Junta muro rosa / muro lavanda en la primera pantalla: linear-gradient(90deg, rgb(59 30 63 / 0.26), rgb(59 30 63 / 0)) de clamp(2.5rem, 6vw, 5.5rem); bajo 860px, 180deg, 0.22 y 2.25rem de alto. Única sombra difusa del build; diverge del contrato de borde nítido y no se extiende.",
+      "workingHours": "Lunes a viernes, de 9:00 a 18:00; solo cambia el texto de la línea de sol.",
+      "noScript": "Valores de mediodía (41%, 0px, 6px) y línea de sol oculta."
+    }
+  },
+  "components": [
+    {
+      "name": "Botón primario",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "La acción principal de la página, en ciruela sobre el piso ocre; hover en ciruela profunda, sin sombra ni transición.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Ver los proyectos <svg viewBox=\"0 0 12 12\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M1.5 6h8.25M6.75 2.75 10 6l-3.25 3.25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"square\"/></svg></a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 0.6rem; font-family: var(--text, 'Red Hat Text Variable', 'Red Hat Text', system-ui, sans-serif); font-weight: 700; font-size: 1rem; line-height: 1.6; text-decoration: none; border-radius: 999px; padding: 0.9rem 1.5rem; min-height: 3rem; background: var(--ciruela, #3b1e3f); color: var(--cal, #fff4f7); } .ds-btn-primary svg { width: 1rem; height: 1rem; } .ds-btn-primary:hover { background: #2a1430; } .ds-btn-primary:focus-visible { outline: 2.5px solid var(--ciruela, #3b1e3f); outline-offset: 3px; }"
+    },
+    {
+      "name": "Botón secundario",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Acción secundaria: contorno de 2px ciruela sin fondo; hover con velo ciruela.",
+      "html": "<a class=\"ds-btn-secondary\" href=\"#\">Contacto</a>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; gap: 0.6rem; font-family: var(--text, 'Red Hat Text Variable', 'Red Hat Text', system-ui, sans-serif); font-weight: 700; font-size: 1rem; line-height: 1.6; text-decoration: none; border-radius: 999px; padding: 0.9rem 1.5rem; min-height: 3rem; color: var(--ciruela, #3b1e3f); border: 2px solid var(--ciruela, #3b1e3f); background: transparent; } .ds-btn-secondary:hover { background: rgb(59 30 63 / 0.1); } .ds-btn-secondary:focus-visible { outline: 2.5px solid var(--ciruela, #3b1e3f); outline-offset: 3px; }"
+    },
+    {
+      "name": "Chip de acción",
+      "kind": "chip",
+      "refersTo": "chip-action",
+      "description": "Copiar o abrir un canal sobre el muro ciruela: fondo sol, hover sol pálido y estado «copiado» en cal durante 2 s.",
+      "html": "<div class=\"ds-chip-wall\"><button class=\"ds-chip\" type=\"button\">Copiar</button><button class=\"ds-chip\" type=\"button\" data-state=\"done\">Copiado</button><a class=\"ds-chip\" href=\"#\">Abrir <svg viewBox=\"0 0 12 12\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M1.5 6h8.25M6.75 2.75 10 6l-3.25 3.25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"square\"/></svg></a></div>",
+      "css": ".ds-chip-wall { display: flex; flex-wrap: wrap; gap: 0.85rem; padding: 1.5rem; background: var(--ciruela, #3b1e3f); } .ds-chip { display: inline-flex; align-items: center; gap: 0.45rem; font-family: var(--text, 'Red Hat Text Variable', 'Red Hat Text', system-ui, sans-serif); font-weight: 700; font-size: 0.9375rem; line-height: 1.6; color: var(--ciruela, #3b1e3f); background: var(--sol, #f6cf7a); border: 0; border-radius: 999px; padding: 0.5rem 1.1rem; min-height: 2.5rem; cursor: pointer; text-decoration: none; } .ds-chip svg { width: 0.9rem; height: 0.9rem; } .ds-chip:hover { background: #f9dc98; } .ds-chip[data-state='done'] { background: var(--cal, #fff4f7); } .ds-chip:focus-visible { outline: 2.5px solid var(--cal, #fff4f7); outline-offset: 3px; }"
+    },
+    {
+      "name": "Selector de idioma",
+      "kind": "nav",
+      "refersTo": "lang-switch",
+      "description": "Píldora de dos opciones sobre lavanda; la activa va llena en ciruela. Bajo 860px se invierte a cal sobre rosa. Las esquinas van por opción para que el anillo de foco se vea completo.",
+      "html": "<div class=\"ds-lang-wall\"><nav class=\"ds-lang\" aria-label=\"Idioma\"><a href=\"#\" aria-current=\"page\">ES</a><a href=\"#\">EN</a></nav></div>",
+      "css": ".ds-lang-wall { display: inline-block; padding: 1.25rem; background: var(--lavanda, #cfc6f0); } .ds-lang { display: flex; border: 1.5px solid var(--ciruela, #3b1e3f); border-radius: 999px; } .ds-lang a { font-family: var(--text, 'Red Hat Text Variable', 'Red Hat Text', system-ui, sans-serif); font-weight: 650; font-size: 0.875rem; line-height: 1.6; text-decoration: none; padding: 0.35rem 0.9rem; min-width: 2.75rem; text-align: center; color: var(--ciruela, #3b1e3f); } .ds-lang a:first-child { border-radius: 999px 0 0 999px; } .ds-lang a:last-child { border-radius: 0 999px 999px 0; } .ds-lang a[aria-current='page'] { background: var(--ciruela, #3b1e3f); color: var(--cal, #fff4f7); } .ds-lang a:not([aria-current='page']):hover { background: rgb(59 30 63 / 0.1); } .ds-lang a:focus-visible { outline: 2.5px solid var(--ciruela, #3b1e3f); outline-offset: 3px; }"
+    },
+    {
+      "name": "Navegación de secciones",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Enlaces en cal sobre el muro rosa, sin subrayado en reposo y subrayados en hover; anillo de foco cal.",
+      "html": "<div class=\"ds-nav-wall\"><nav aria-label=\"Secciones\"><ul class=\"ds-nav\"><li><a href=\"#\">Proyectos</a></li><li><a href=\"#\">Experiencia</a></li><li><a href=\"#\">Contacto</a></li></ul></nav></div>",
+      "css": ".ds-nav-wall { padding: 1.25rem 1.5rem; background: var(--rosa, #b8336a); } .ds-nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.75rem; list-style: none; margin: 0; padding: 0; } .ds-nav a { display: inline-block; padding-block: 0.4rem; color: var(--cal, #fff4f7); font-family: var(--text, 'Red Hat Text Variable', 'Red Hat Text', system-ui, sans-serif); font-weight: 600; font-size: 0.975rem; line-height: 1.6; text-decoration: none; text-decoration-thickness: 1.5px; text-underline-offset: 0.22em; } .ds-nav a:hover { text-decoration: underline; } .ds-nav a:focus-visible { outline: 2.5px solid var(--cal, #fff4f7); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Vano con lista de proyectos",
+      "kind": "card",
+      "refersTo": "vano",
+      "description": "Interior cielo hundido en el muro lavanda, con derrame interior de borde nítido; cada enlace lleva título y una línea de ámbito y prueba.",
+      "html": "<div class=\"ds-vano-wall\"><section class=\"ds-vano\" aria-labelledby=\"ds-vano-h\"><h2 id=\"ds-vano-h\">Proyectos</h2><ol><li><a href=\"#\"><span class=\"ds-vano-title\">Proyecto de ejemplo</span><span class=\"ds-vano-meta\">Ámbito · 2026 · Prueba medible</span></a></li><li><a href=\"#\"><span class=\"ds-vano-title\">Otro proyecto de ejemplo</span><span class=\"ds-vano-meta\">Cliente · 2026 · Prueba medible</span></a></li></ol></section></div>",
+      "css": ".ds-vano-wall { display: flex; justify-content: center; padding: 2.5rem 1.5rem; background: var(--lavanda, #cfc6f0); } .ds-vano { width: min(100%, 30rem); padding: 1.6rem 1.75rem 1.1rem; background: var(--cielo, #f4effb); color: var(--ciruela, #3b1e3f); box-shadow: inset var(--reveal-x, 0px) var(--reveal-y, 6px) 0 rgb(59 30 63 / 0.13); font-family: var(--text, 'Red Hat Text Variable', 'Red Hat Text', system-ui, sans-serif); font-size: 1.0625rem; line-height: 1.6; } .ds-vano h2 { margin: 0 0 0.5rem; font-family: var(--display, 'Red Hat Display Variable', 'Red Hat Display', system-ui, sans-serif); font-size: 1rem; font-weight: 700; letter-spacing: 0.01em; } .ds-vano ol { list-style: none; margin: 0; padding: 0; } .ds-vano a { display: block; padding: 0.85rem 0; border-top: 1.5px solid var(--linea, #ded3ef); color: inherit; text-decoration: none; } .ds-vano a:hover .ds-vano-title { text-decoration: underline; text-decoration-color: var(--rosa, #b8336a); text-underline-offset: 0.22em; } .ds-vano a:focus-visible { outline: 2.5px solid var(--ciruela, #3b1e3f); outline-offset: 3px; border-radius: 2px; } .ds-vano-title { display: block; font-family: var(--display, 'Red Hat Display Variable', 'Red Hat Display', system-ui, sans-serif); font-weight: 700; font-size: 1.0625rem; line-height: 1.25; } .ds-vano-meta { display: block; margin-top: 0.2rem; font-size: 0.875rem; color: var(--ciruela-2, #5c3a60); }"
+    },
+    {
+      "name": "Sala de proyecto con regla de cifras",
+      "kind": "card",
+      "refersTo": "room",
+      "description": "Sala cielo con derrame tenue: texto a la izquierda; ficha y antes/después sobre una sola regla a la derecha, con las cifras escritas en Mono.",
+      "html": "<div class=\"ds-room-wall\"><article class=\"ds-room\" aria-labelledby=\"ds-room-t\"><header class=\"ds-room-head\"><h3 class=\"ds-room-title\" id=\"ds-room-t\">Proyecto de ejemplo</h3><span class=\"ds-room-scope\">Ámbito · 2026</span></header><div class=\"ds-room-body\"><p><b>Problema.</b> Texto sintético que plantea el problema en una o dos líneas.</p><p><b>Solución.</b> Texto sintético con la solución y la decisión técnica que la sostiene.</p></div><div class=\"ds-room-side\"><dl class=\"ds-specs\"><dt>Rol</dt><dd>Desarrollo</dd><dt>Stack</dt><dd>Python · TypeScript</dd></dl><div class=\"ds-measure\"><h4>Medido en producción</h4><div class=\"ds-m\"><div class=\"ds-m-label\"><span>Medida de ejemplo</span><span class=\"ds-mono\">100 → 40 MB · −60 %</span></div><div class=\"ds-m-rule\" role=\"img\" aria-label=\"Antes: 100 MB. Después: 40 MB.\"><span class=\"ds-m-after\" style=\"width:40%\"></span></div></div><p class=\"ds-m-legend\" aria-hidden=\"true\"><span>Antes</span><span>Después</span></p></div></div></article></div>",
+      "css": ".ds-room-wall { padding: 2rem 1.5rem; background: var(--lavanda, #cfc6f0); } .ds-room { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: 1.5rem clamp(2rem, 4vw, 3.5rem); padding: clamp(1.5rem, 3vw, 2.5rem); background: var(--cielo, #f4effb); color: var(--ciruela, #3b1e3f); box-shadow: inset var(--reveal-x, 0px) var(--reveal-y, 6px) 0 rgb(59 30 63 / 0.1); font-family: var(--text, 'Red Hat Text Variable', 'Red Hat Text', system-ui, sans-serif); font-size: 1.0625rem; line-height: 1.6; } .ds-room-head { grid-column: 1 / -1; display: grid; gap: 0.3rem; } .ds-room-title { margin: 0; font-family: var(--display, 'Red Hat Display Variable', 'Red Hat Display', system-ui, sans-serif); font-weight: 800; font-size: clamp(1.45rem, 1.15rem + 1vw, 2rem); line-height: 1.15; letter-spacing: -0.02em; text-wrap: balance; } .ds-room-scope { font-size: 0.9375rem; color: var(--ciruela-2, #5c3a60); } .ds-room-body { display: grid; gap: 0.85rem; max-width: 68ch; } .ds-room-body p { margin: 0; } .ds-room-body b { font-weight: 700; } .ds-room-side { display: grid; gap: 1.5rem; align-content: start; } .ds-specs { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0.45rem 1rem; margin: 0; font-size: 0.9375rem; } .ds-specs dt { color: var(--ciruela-2, #5c3a60); } .ds-specs dd { margin: 0; font-weight: 600; } .ds-measure { display: grid; gap: 1rem; } .ds-measure h4 { margin: 0; font-size: 0.875rem; font-weight: 700; color: var(--ciruela-2, #5c3a60); } .ds-m { display: grid; gap: 0.4rem; } .ds-m-label { display: flex; justify-content: space-between; gap: 1rem; font-size: 0.9375rem; font-weight: 600; } .ds-mono { font-family: var(--mono, 'Red Hat Mono Variable', 'Red Hat Mono', ui-monospace, monospace); font-variant-numeric: tabular-nums; font-size: 0.875rem; white-space: nowrap; } .ds-m-rule { position: relative; height: 0.75rem; background: var(--lavanda-deep, #b4a7e2); } .ds-m-after { position: absolute; inset: 0 auto 0 0; background: var(--rosa, #b8336a); } .ds-m-legend { display: flex; gap: 1.1rem; margin: 0; font-size: 0.8125rem; color: var(--ciruela-2, #5c3a60); } .ds-m-legend span::before { content: ''; display: inline-block; width: 0.7rem; height: 0.7rem; margin-right: 0.4rem; vertical-align: -0.05rem; background: var(--lavanda-deep, #b4a7e2); } .ds-m-legend span:last-child::before { background: var(--rosa, #b8336a); } @media (max-width: 1100px) { .ds-room { grid-template-columns: minmax(0, 1fr); } }"
+    },
+    {
+      "name": "Piso con luz",
+      "kind": "custom",
+      "refersTo": "luz",
+      "description": "Franja ocre con el paralelogramo de sol en left: var(--light-x) (mediodía 41 %), las acciones y la línea de sol; la luz solo se desliza sin preferencia de movimiento reducido.",
+      "html": "<div class=\"ds-piso\"><div class=\"ds-luz\" aria-hidden=\"true\"></div><div class=\"ds-acts\"><a class=\"ds-piso-btn ds-piso-btn--p\" href=\"#\">Ver los proyectos <svg viewBox=\"0 0 12 12\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M1.5 6h8.25M6.75 2.75 10 6l-3.25 3.25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"square\"/></svg></a><a class=\"ds-piso-btn ds-piso-btn--s\" href=\"#\">Contacto</a></div><p class=\"ds-sunline\">En Puebla son las 12:00 p. m. · horario laboral. La luz de esta página sigue esa hora.</p></div>",
+      "css": ".ds-piso { position: relative; overflow: hidden; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem 3rem; min-height: clamp(9rem, 22vh, 13rem); padding: clamp(1.5rem, 4vh, 2.5rem) clamp(1.25rem, 4.4vw, 4rem); background: var(--ocre, #e5a33a); color: var(--ciruela, #3b1e3f); font-family: var(--text, 'Red Hat Text Variable', 'Red Hat Text', system-ui, sans-serif); line-height: 1.6; } .ds-luz { position: absolute; top: 0; bottom: 0; left: var(--light-x, 41%); width: min(46%, 38rem); background: var(--sol, #f6cf7a); clip-path: polygon(30% 0, 100% 0, 78% 100%, 0 100%); pointer-events: none; } @media (prefers-reduced-motion: no-preference) { .ds-luz { transition: left 1600ms cubic-bezier(0.16, 1, 0.3, 1), opacity 1600ms cubic-bezier(0.16, 1, 0.3, 1); } } .ds-acts { position: relative; display: flex; flex-wrap: wrap; gap: 0.85rem; } .ds-piso-btn { display: inline-flex; align-items: center; gap: 0.6rem; font-weight: 700; font-size: 1rem; text-decoration: none; border-radius: 999px; padding: 0.9rem 1.5rem; min-height: 3rem; } .ds-piso-btn svg { width: 1rem; height: 1rem; } .ds-piso-btn--p { background: var(--ciruela, #3b1e3f); color: var(--cal, #fff4f7); } .ds-piso-btn--p:hover { background: #2a1430; } .ds-piso-btn--s { color: var(--ciruela, #3b1e3f); border: 2px solid var(--ciruela, #3b1e3f); } .ds-piso-btn--s:hover { background: rgb(59 30 63 / 0.1); } .ds-piso-btn:focus-visible { outline: 2.5px solid var(--ciruela, #3b1e3f); outline-offset: 3px; } .ds-sunline { position: relative; margin: 0 0 0 auto; max-width: 32ch; text-align: right; font-size: 0.9375rem; font-weight: 600; } @media (max-width: 860px) { .ds-piso { flex-direction: column; align-items: flex-start; } .ds-sunline { margin-left: 0; text-align: left; } .ds-luz { width: 70%; } }"
+    },
+    {
+      "name": "Muro con diagonal y vano grande",
+      "kind": "custom",
+      "refersTo": "wall-rosa",
+      "description": "Muro rosa a sangre con la diagonal proyectada arriba a la izquierda (mañana), titular en Display 850 y la lectura densa dentro de un vano grande cielo.",
+      "html": "<section class=\"ds-plane\" aria-labelledby=\"ds-plane-h\"><div class=\"ds-plane-wrap\"><h2 class=\"ds-plane-h2\" id=\"ds-plane-h\">Experiencia</h2><div class=\"ds-vano-lg\"><ol class=\"ds-jobs\"><li class=\"ds-job\"><p class=\"ds-job-period\">2026 – hoy</p><div><h3 class=\"ds-job-role\">Puesto de ejemplo</h3><span class=\"ds-job-place\">Remoto · México</span><ul class=\"ds-dots\"><li>Logro sintético con su punto de partida.</li><li>Otro logro sintético y verificable.</li></ul></div></li></ol></div></div></section>",
+      "css": ".ds-plane { position: relative; overflow: hidden; padding-block: clamp(4rem, 9vw, 7.5rem); background: var(--rosa, #b8336a); color: var(--cal, #fff4f7); font-family: var(--text, 'Red Hat Text Variable', 'Red Hat Text', system-ui, sans-serif); font-size: 1.0625rem; line-height: 1.6; } .ds-plane::before { content: ''; position: absolute; inset: 0 auto auto 0; width: 42%; height: clamp(5rem, 12vw, 9rem); background: rgb(0 0 0 / 0.12); clip-path: polygon(0 0, 100% 0, 0 100%); pointer-events: none; } .ds-plane-wrap { position: relative; max-width: 84rem; margin-inline: auto; padding-inline: clamp(1.25rem, 4.4vw, 4rem); } .ds-plane-h2 { margin: 0 0 clamp(1.75rem, 3vw, 2.5rem); font-family: var(--display, 'Red Hat Display Variable', 'Red Hat Display', system-ui, sans-serif); font-weight: 850; font-size: clamp(2.4rem, 1.4rem + 3.2vw, 4rem); line-height: 1; letter-spacing: -0.028em; } .ds-vano-lg { padding: clamp(1.25rem, 3vw, 2.5rem) clamp(1.25rem, 3.5vw, 3rem); background: var(--cielo, #f4effb); color: var(--ciruela, #3b1e3f); box-shadow: inset var(--reveal-x, 0px) var(--reveal-y, 6px) 0 rgb(59 30 63 / 0.13); } .ds-jobs { display: grid; list-style: none; margin: 0; padding: 0; } .ds-job { display: grid; grid-template-columns: minmax(0, 10rem) minmax(0, 1fr); gap: 0.75rem 2.5rem; padding-block: 1.75rem; border-top: 1.5px solid var(--linea, #ded3ef); border-bottom: 1.5px solid var(--linea, #ded3ef); } .ds-job-period { margin: 0; font-weight: 600; color: var(--ciruela-2, #5c3a60); white-space: nowrap; } .ds-job-role { margin: 0; font-family: var(--display, 'Red Hat Display Variable', 'Red Hat Display', system-ui, sans-serif); font-weight: 800; font-size: 1.15rem; line-height: 1.25; } .ds-job-place { display: block; font-size: 0.9375rem; color: var(--ciruela-2, #5c3a60); } .ds-dots { display: grid; gap: 0.55rem; max-width: 70ch; list-style: none; margin: 0.85rem 0 0; padding: 0; } .ds-dots li { position: relative; padding-left: 1.2rem; } .ds-dots li::before { content: ''; position: absolute; left: 0; top: 0.68em; width: 0.45rem; height: 0.45rem; background: var(--rosa, #b8336a); } @media (max-width: 860px) { .ds-job { grid-template-columns: minmax(0, 1fr); gap: 0.4rem; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Planos de luz y color",
+    "overview": "La página es arquitectura moderna mexicana habitable. Cada sección es un muro plano de color que corre a sangre (rosa, lavanda, ocre y, al final, ciruela) y los muros se tocan sin juntas ni bordes. El contenido no se pega a los muros como tarjetas: vive en vanos, interiores cielo hundidos en el muro, y la luz de sol que entra por ellos es lo que une un plano con otro. La densidad es de casa, no de tablero: muros amplios, un foco por muro y silencio alrededor.\n\nLa luz es el único reloj del sistema. Una sola fuente, la hora local de Puebla, coloca el paralelogramo de luz sobre el piso, la sombra interior de cada vano y el lado de la diagonal que cada muro proyecta sobre el siguiente. Las sombras son de borde nítido y solo explican profundidad arquitectónica; nada flota. Sin JavaScript la casa queda a mediodía. El movimiento se reduce a un momento: la luz deslizándose a su lugar al cargar.\n\nEl sistema rechaza el hero de saludo sobre fondo neutro, las tarjetas iguales y la plantilla oscura de desarrollador, y también el rojo/blanco/negro y lo que se ve anticuado. La dirección descartada «Hoja técnica» (códigos de nota, numeración de secciones, gramática de ficha técnica) queda como anti-referencia nombrada: nada de ella forma parte de este sistema.",
+    "keyCharacteristics": [
+      "Muros planos a sangre en rosa, lavanda, ocre y ciruela; interiores cielo como vanos.",
+      "Luz opaca y sombras de borde nítido, colocadas por la hora de Puebla; mediodía sin JavaScript.",
+      "Una sola familia, Red Hat, en tres voces: Display habla, Text explica, Mono mide.",
+      "Arquitectura en esquina viva; solo lo que se pulsa es píldora.",
+      "Tinta ciruela en lugar de negro y cal en lugar de blanco.",
+      "Un único movimiento: la luz que se desliza al cargar."
+    ],
+    "rules": [
+      {
+        "name": "La Regla del Muro a Sangre",
+        "body": "Cada sección es un muro de un solo color que llega de borde a borde y toca al siguiente sin junta, borde ni espacio. Dentro de un muro no hay un segundo fondo salvo el cielo de un vano y la luz.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regla de la Tinta Ciruela",
+        "body": "No hay negro ni blanco: la tinta es ciruela, con ciruela 2 para lo secundario, y sobre rosa o ciruela el texto es cal, con cal 2 para lo secundario. El negro solo aparece como sombra translúcida (12 %) sobre los muros oscuros.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regla del Sol que No Es Muro",
+        "body": "El sol nunca pinta un muro: es luz (el paralelogramo del piso), señal (el punto de disponibilidad, el subrayado del correo, la selección) o la acción iluminada sobre el muro ciruela (el chip).",
+        "section": "colors"
+      },
+      {
+        "name": "La Regla del Rosa Breve",
+        "body": "Sobre rosa solo van texto grande y líneas cortas, porque cal da 5.25:1 y cal 2 apenas 4.76:1. Cuando una lista larga cae en un muro rosa, entra en un vano cielo, como la Experiencia.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regla de las Tres Voces",
+        "body": "Display habla (nombre, titulares, frases), Text explica y opera (lectura, navegación, botones) y Mono mide (cifras y años, siempre tabulares). Mono nunca es disfraz «técnico».",
+        "section": "typography"
+      },
+      {
+        "name": "La Regla del Peso de Muro",
+        "body": "Los pesos 800–900 y el tracking negativo (de −0.01em a −0.032em) son solo de Display; Text y Mono se quedan entre 400 y 700. Un titular nunca lleva rótulo encima.",
+        "section": "typography"
+      },
+      {
+        "name": "La Regla de la Pila",
+        "body": "Bajo 860px todo es una sola columna en el orden de lectura y ningún contenido se esconde. Lo único que se retira, a 560px, es la luz decorativa del muro ciruela.",
+        "section": "layout"
+      },
+      {
+        "name": "La Regla de la Sombra que Explica",
+        "body": "Una sombra solo explica arquitectura: el derrame interior de un vano o la diagonal que un muro proyecta sobre el siguiente. Siempre de borde nítido y en tinta translúcida; nada que se pulse proyecta sombra.",
+        "section": "elevation"
+      },
+      {
+        "name": "La Regla del Reloj de Puebla",
+        "body": "Luz y sombra salen de una sola fuente, la hora de Puebla: por la mañana se cargan a la izquierda y desde la 1 p. m. a la derecha; de noche la luz del piso baja a 35 %. Sin JavaScript, mediodía.",
+        "section": "elevation"
+      },
+      {
+        "name": "La Regla del Único Momento",
+        "body": "La única animación es la luz que se desliza de mediodía a su hora al cargar (1600ms, cubic-bezier(0.16, 1, 0.3, 1)); con `prefers-reduced-motion` aparece ya en su lugar.",
+        "section": "elevation"
+      },
+      {
+        "name": "La Regla de la Esquina Viva",
+        "body": "Lo que se habita es rectángulo de esquina viva (0); lo que se pulsa es píldora (999px). No hay radios intermedios en superficies.",
+        "section": "shapes"
+      },
+      {
+        "name": "La Regla del Vano Hundido",
+        "body": "Un vano se hunde, no flota: fondo cielo, derrame interior de borde nítido y relleno mayor que el derrame máximo de 14px; sin borde, sin radio y sin sombra exterior.",
+        "section": "components"
+      },
+      {
+        "name": "La Regla de la Cifra en Texto",
+        "body": "La regla de antes/después acompaña a las cifras, no las sustituye: los dos valores, la unidad y el cambio van escritos en Mono junto a la regla y en su `aria-label`.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do construye cada sección como un muro a sangre de un solo color, pegado al siguiente sin espacio; lavanda y ocre para leer, rosa para presencia y ciruela solo para cerrar.",
+      "Do mete la lectura densa en un vano o sala cielo con tinta ciruela y un relleno mayor que 14px, el derrame máximo.",
+      "Do coloca luz y sombras solo con `--light-x`, `--reveal-x`, `--reveal-y`, `data-afternoon` y `data-night`, y deja los valores de mediodía (41 %, 0px, 6px) como estado sin JavaScript.",
+      "Do envuelve cualquier transición de luz o sombra en `@media (prefers-reduced-motion: no-preference)`.",
+      "Do escribe las cifras en Red Hat Mono tabular y muestra antes y después sobre una sola regla: lavanda profunda para el antes, rosa para el después.",
+      "Do tematiza las superficies del navegador desde la paleta: selección sol, cursor y `accent-color` rosa, barra rosa sobre cielo, foco de 2.5px a 3px (ciruela en claro, cal en oscuro) y subrayado de 1.5px a 0.22em.",
+      "Do usa la flecha SVG propia (12 × 12, trazo de 1.6, puntas cuadradas, `currentColor`) en las acciones que llevan a una prueba o salen del sitio.",
+      "Do respeta los objetivos táctiles del build: botones de al menos 3rem de alto, chips de 2.5rem y opciones de idioma de 2.75rem de ancho (2.5rem bajo 560px)."
+    ],
+    "donts": [
+      "Don't traigas la gramática de «Hoja técnica»: códigos de nota (AN-01…), numeración de secciones ni la ficha técnica como estructura de la página.",
+      "Don't uses negro ni blanco puros en texto o superficies, ni la combinación rojo/blanco/negro; el negro solo existe como sombra al 12 % sobre rosa y ciruela.",
+      "Don't conviertas el sitio en la plantilla oscura de desarrollador ni abras con un saludo sobre fondo neutro; el ciruela es muro de cierre, no tema.",
+      "Don't uses tarjetas con borde, radio o sombra exterior: ninguna `box-shadow` fuera del derrame interior de vanos y salas.",
+      "Don't difumines sombras; la sombra de junta de la primera pantalla es la única difusa y no se copia.",
+      "Don't pintes un muro de sol o de cielo: el sol es luz y el cielo es interior.",
+      "Don't pongas ciruela 2 sobre ocre (4.32:1) ni texto largo en cal 2 sobre rosa (4.76:1).",
+      "Don't pongas rótulos, «eyebrows» ni versalitas espaciadas encima de un titular.",
+      "Don't agregues barras o porcentajes de habilidad, contadores animados, pantallas de carga ni muros de logos.",
+      "Don't agregues movimiento decorativo: aparte de la luz, solo el chevron de «Más detalle» gira (180ms) como respuesta de estado; nada de entradas por sección ni efectos al hacer scroll.",
+      "Don't dejes que un contenedor con `overflow: hidden` recorte el anillo de foco."
+    ]
+  }
+}

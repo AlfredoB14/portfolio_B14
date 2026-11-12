@@ -1,0 +1,357 @@
+---
+import Base from '../../layouts/Base.astro';
+import Arrow from '../../components/Arrow.astro';
+import { content, facts, LANGS, type Lang } from '../../data/content';
+
+export function getStaticPaths() {
+  return LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Lang;
+const t = content[lang];
+const other: Lang = lang === 'es' ? 'en' : 'es';
+const fmt = (n: number) => n.toLocaleString(lang === 'es' ? 'es-MX' : 'en-US');
+---
+
+<Base lang={lang} t={t}>
+  <a class="skip" href="#main">{t.skip}</a>
+
+  <header class="stage">
+    <div class="topbar">
+      <nav aria-label={t.nav.label}>
+        <ul class="nav">
+          <li><a href="#projects">{t.nav.projects}</a></li>
+          <li><a href="#experience">{t.nav.experience}</a></li>
+          <li><a href="#contact">{t.nav.contact}</a></li>
+        </ul>
+      </nav>
+      <nav class="lang" aria-label={t.lang.label}>
+        {
+          LANGS.map((l) => (
+            <a href={`/${l}/`} hreflang={l} lang={l} aria-current={l === lang ? 'page' : undefined} aria-label={t.lang.names[l]}>
+              {l.toUpperCase()}
+            </a>
+          ))
+        }
+      </nav>
+    </div>
+
+    <div class="wall-rosa on-dark">
+      <div class="id">
+        <h1 class="name">{facts.name}</h1>
+        <p class="role">{t.hero.role}</p>
+        <ul class="status">
+          <li class="on">{t.hero.available}</li>
+          {t.hero.status.map((s) => <li>{s}</li>)}
+        </ul>
+        <p class="stackline">{t.hero.stack}</p>
+      </div>
+    </div>
+
+    <div class="wall-lav">
+      <section class="vano" aria-labelledby="vano-title">
+        <h2 id="vano-title">{t.hero.vano}</h2>
+        <ol>
+          {
+            t.projects.items.map((p) => (
+              <li>
+                <a href={`#${p.id}`}>
+                  <span class="vano-title">{p.title}</span>
+                  <span class="vano-meta">
+                    {p.scope} · {p.proof}
+                  </span>
+                </a>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+    </div>
+
+    <div class="piso">
+      <div class="luz" aria-hidden="true"></div>
+      <div class="acts">
+        <a class="btn btn--p" href="#projects">
+          {t.hero.primary}
+          <Arrow />
+        </a>
+        <a class="btn btn--s" href="#contact">{t.hero.secondary}</a>
+      </div>
+      <p
+        class="sunline"
+        data-sun
+        data-now={t.hero.light.now}
+        data-open={t.hero.light.open}
+        data-closed={t.hero.light.closed}
+        data-follow={t.hero.light.follow}
+        hidden
+      >
+      </p>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="plane plane--lav" id="projects" aria-labelledby="h-projects">
+      <div class="wrap">
+        <h2 class="h2" id="h-projects">{t.projects.heading}</h2>
+        <p class="lead">{t.projects.lead}</p>
+        <div class="rooms">
+          {
+            t.projects.items.map((p) => (
+              <article class="room" id={p.id} aria-labelledby={`${p.id}-title`}>
+                <header class="room__head">
+                  <h3 class="room__title" id={`${p.id}-title`}>
+                    {p.title}
+                  </h3>
+                  <span class="room__scope">{p.scope}</span>
+                </header>
+                <div class="room__body">
+                  <p>
+                    <b>{t.projects.labels.problem}.</b> {p.problem}
+                  </p>
+                  <p>
+                    <b>{t.projects.labels.solution}.</b> {p.solution}
+                  </p>
+                  {p.decision && (
+                    <p>
+                      <b>{t.projects.labels.decision}.</b> {p.decision}
+                    </p>
+                  )}
+                  {p.result && (
+                    <p>
+                      <b>{t.projects.labels.result}.</b> {p.result}
+                    </p>
+                  )}
+                </div>
+                <div class="room__side">
+                  <dl class="specs">
+                    {p.specs.map(([k, v]) => (
+                      <>
+                        <dt>{k}</dt>
+                        <dd>{v}</dd>
+                      </>
+                    ))}
+                  </dl>
+                  {p.metrics && (
+                    <div class="measure">
+                      <h4>{t.projects.labels.measured}</h4>
+                      {p.metrics.map((m) => (
+                        <div class="m">
+                          <div class="m__label">
+                            <span>{m.label}</span>
+                            <span class="m__values">
+                              <span class="mono">{fmt(m.before)}</span> → <span class="mono">
+                                {fmt(m.after)} {m.unit}
+                              </span> · <span class="mono">{m.change}</span>
+                            </span>
+                          </div>
+                          <div
+                            class="m__rule"
+                            role="img"
+                            aria-label={`${t.projects.labels.before}: ${fmt(m.before)} ${m.unit}. ${t.projects.labels.after}: ${fmt(m.after)} ${m.unit}.`}
+                          >
+                            <span class="m__after" style={`width:${((m.after / m.before) * 100).toFixed(1)}%`} />
+                          </div>
+                        </div>
+                      ))}
+                      <p class="m__legend" aria-hidden="true">
+                        <span>{t.projects.labels.before}</span>
+                        <span>{t.projects.labels.after}</span>
+                      </p>
+                    </div>
+                  )}
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <section class="plane plane--rosa on-dark" id="experience" aria-labelledby="h-experience">
+      <div class="wrap">
+        <h2 class="h2" id="h-experience">{t.experience.heading}</h2>
+        <div class="vano-lg">
+        <ol class="jobs">
+          {
+            t.experience.jobs.map((j) => (
+              <li class="job">
+                <p class="job__period">{j.period}</p>
+                <div>
+                  <h3 class="job__role">{j.role}</h3>
+                  <span class="job__company">{j.company}</span>
+                  <span class="job__place">{j.place}</span>
+                </div>
+                <div class="job__changes">
+                  <ul class="dots">
+                    {j.changes.map((c) => (
+                      <li>{c}</li>
+                    ))}
+                  </ul>
+                  {j.more && (
+                    <details class="more">
+                      <summary>{t.experience.moreLabel}</summary>
+                      <p>{j.more}</p>
+                    </details>
+                  )}
+                  <p class="job__stack">{j.stack}</p>
+                </div>
+              </li>
+            ))
+          }
+        </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="plane plane--ocre" id="stack" aria-labelledby="h-stack">
+      <div class="wrap">
+        <h2 class="h2" id="h-stack">{t.stack.heading}</h2>
+        <div class="groups">
+          {
+            t.stack.groups.map(([name, daily, used]) => (
+              <section class="group" aria-label={name}>
+                <h3>{name}</h3>
+                <dl>
+                  <dt>{t.stack.daily}</dt>
+                  <dd>{daily}</dd>
+                  {used !== '—' && (
+                    <>
+                      <dt>{t.stack.used}</dt>
+                      <dd class="used">{used}</dd>
+                    </>
+                  )}
+                </dl>
+              </section>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <section class="plane plane--lav" id="education" aria-labelledby="h-education">
+      <div class="wrap">
+        <h2 class="h2" id="h-education">{t.education.heading}</h2>
+        <ul class="rows">
+          {
+            t.education.rows.map(([year, item, detail]) => (
+              <li class="row">
+                <span class="row__year">{year}</span>
+                <span class="row__item">{item}</span>
+                <span class="row__detail">{detail}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </section>
+
+    <section class="plane plane--rosa on-dark" id="about" aria-labelledby="h-about">
+      <div class="wrap">
+        <h2 class="h2" id="h-about">{t.author.heading}</h2>
+        <div class="about">
+          {t.author.body.map((p) => <p>{p}</p>)}
+        </div>
+      </div>
+    </section>
+
+    <section class="plane plane--ciruela on-dark" id="contact" aria-labelledby="h-contact">
+      <div class="wrap">
+        <h2 class="h2" id="h-contact">{t.contact.heading}</h2>
+        <p class="contact-lead">{t.contact.lead}</p>
+        <ul class="channels">
+          <li class="channel">
+            <span class="channel__name">{t.contact.email}</span>
+            <a class="channel__value" href={`mailto:${facts.email}`}>{facts.email}</a>
+            <button class="chip-btn" type="button" hidden data-copy={facts.email} data-label-done={t.contact.copied}>
+              {t.contact.copy}
+            </button>
+          </li>
+          <li class="channel">
+            <span class="channel__name">LinkedIn</span>
+            <span class="channel__value">{facts.linkedinLabel}</span>
+            <a class="chip-btn" href={facts.linkedin} rel="me noopener" target="_blank">
+              {t.contact.open}
+              <Arrow />
+            </a>
+          </li>
+          <li class="channel">
+            <span class="channel__name">GitHub</span>
+            <span class="channel__value">{facts.githubLabel}</span>
+            <a class="chip-btn" href={facts.github} rel="me noopener" target="_blank">
+              {t.contact.open}
+              <Arrow />
+            </a>
+          </li>
+        </ul>
+        <p class="contact-note">{t.contact.freelance}</p>
+
+        <footer class="foot">
+          <span>{t.footer.updated}</span>
+          <span>{t.footer.colophon}</span>
+          <a href={`/${other}/`} hreflang={other} lang={other}>{t.lang.names[other]}</a>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // La luz obedece la hora solar de Puebla: posición del paralelogramo de luz y de las sombras.
+    // Sin JavaScript queda la luz de mediodía.
+    const root = document.documentElement;
+    const lang = root.lang === 'es' ? 'es-MX' : 'en-US';
+    const tz = 'America/Mexico_City';
+    const now = new Date();
+    const parts = Object.fromEntries(
+      new Intl.DateTimeFormat('en-US', { timeZone: tz, hour: 'numeric', minute: 'numeric', weekday: 'short', hourCycle: 'h23' })
+        .formatToParts(now)
+        .map((p) => [p.type, p.value]),
+    );
+    const hour = Number(parts.hour) + Number(parts.minute) / 60;
+    const day = Math.min(1, Math.max(0, (hour - 7) / 12));
+    const night = hour < 7 || hour >= 19.5;
+    const weekday = !['Sat', 'Sun'].includes(parts.weekday ?? '');
+    const working = weekday && hour >= 9 && hour < 18;
+
+    // Leer el estilo de la luz antes de moverla garantiza que la transición arranque desde mediodía.
+    const luz = document.querySelector('.luz');
+    if (luz) getComputedStyle(luz).left;
+    requestAnimationFrame(() =>
+      requestAnimationFrame(() => {
+        root.style.setProperty('--light-x', `${(20 + day * 42).toFixed(1)}%`);
+        root.style.setProperty('--reveal-x', `${((0.5 - day) * 28).toFixed(1)}px`);
+        root.style.setProperty('--reveal-y', `${(6 + Math.abs(day - 0.5) * 16).toFixed(1)}px`);
+        if (day > 0.5) root.dataset.afternoon = '';
+        if (night) root.dataset.night = '';
+      }),
+    );
+
+    const line = document.querySelector<HTMLElement>('[data-sun]');
+    if (line) {
+      const time = new Intl.DateTimeFormat(lang, { timeZone: tz, hour: 'numeric', minute: '2-digit' }).format(now);
+      const status = working ? line.dataset.open : line.dataset.closed;
+      line.textContent = `${(line.dataset.now ?? '').replace('{time}', time)} · ${status}. ${line.dataset.follow ?? ''}`;
+      line.hidden = false;
+    }
+
+    // Copiar el correo: mejora progresiva. Sin JavaScript queda el enlace mailto.
+    for (const btn of document.querySelectorAll<HTMLButtonElement>('button[data-copy]')) {
+      if (!navigator.clipboard) continue;
+      btn.hidden = false;
+      const idle = btn.textContent ?? '';
+      btn.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(btn.dataset.copy ?? '');
+          btn.textContent = btn.dataset.labelDone ?? idle;
+          btn.dataset.state = 'done';
+          window.setTimeout(() => {
+            btn.textContent = idle;
+            delete btn.dataset.state;
+          }, 2000);
+        } catch {
+          /* Si el portapapeles falla, el enlace mailto sigue disponible. */
+        }
+      });
+    }
+  </script>
+</Base>
